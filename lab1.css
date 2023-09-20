@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(179, 243, 222);
+    color: rgb(16, 12, 12);
+    font-family: arial;
+    margin: 0px;
+    
+
+}
+
+header {
+    background: linear-gradient(to right , red,orange,yellow,green, rgb(0, 247, 255), blue, violet );
+    color: rgb(81, 210, 167);
+    padding: 20px;
+    font-size: 16pt;
+    
+}
+header:hover {
+    color: blue;
+    font-size: 20pt;
+    transition: 600ms 1s
+}
+header:active {
+    color: rgb(255, 0, 230);
+    font-size: 20pt;
+    transition: 200ms 1s
+}
+
+main {
+    margin: 10px 20px;
+}
+footer {
+    background: linear-gradient(to right , red,orange,yellow,green, rgb(0, 247, 255), blue, violet );
+    color: rgb(0, 255, 187);
+    padding: 10px;
+    font-size: 10pt;
+    text-align: right;
+    font-style: italic;
+    position:fixed;
+    left:0;
+    bottom:0;
+    right:0;
+}
+footer:hover {
+    color: blue;
+    font-size: 20pt;
+    transition: 600ms 1s;
+    
+}
+footer:active {
+    color: rgb(255, 0, 230);
+    font-size: 20pt;
+    transition: 200ms 1s
+}
+
+a {
+    color: rgb(3, 193, 101);
+    text-decoration: none;
+    text-shadow: 1px 1px 10px green;
+    transition: 600ms 1s
+
+}
+a:visited{
+    color: blue;
+    background-color: green;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: white;
+    font-weight: bold;
+    transition: 900ms 0.3s;
+    
+    
+}
+a:active {
+    color: white;
+    background-color: green;
+}
+img {
+    width:700px;
+    height:700px;
+}
