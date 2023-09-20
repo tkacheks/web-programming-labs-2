@@ -67,7 +67,6 @@ def lab1():
                     <a href="/lab1/color" target="_blank"   > Произвольная страница </a>
                 </li>
         </ol>
-        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''"
         <footer>
             &copy; Давоян Карине, ФБИ-11, 3 курс, 2023
         </footer>
@@ -85,7 +84,7 @@ def oak():
     <body>
         <h1>Дуб</h1>
         <img src="''' + url_for('static', filename='oak.jpg') + '''">
-        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''"
+        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''">
         <footer>
             &copy; Давоян Карине, ФБИ-11, 3 курс, 2023
         </footer>
@@ -103,8 +102,9 @@ def nstu():
     <body>
         <h1>Давоян Карине Горовна</h1>
         <img src="''' + url_for('static', filename='nstu.jpeg') + '''">
-        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''"
-        <footer>
+        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''">
+
+        <footer> 
             &copy; Давоян Карине, ФБИ-11, 3 курс, 2023
         </footer>
     </body>
@@ -124,7 +124,7 @@ def python():
           потому что он эффективен, прост в изучении и работает на разных платформах. Программы на языке 
           Python можно скачать бесплатно, они совместимы со всеми типами систем и повышают скорость разработки.</h1>
         <img src="''' + url_for('static', filename='python.jpg') + '''">
-        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''"
+        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''">
         <footer>
             &copy; Давоян Карине, ФБИ-11, 3 курс, 2023
         </footer>
@@ -148,7 +148,7 @@ def color():
 Покрасьте комнату в <b>фиолетовый</b>  и в ней станет прохладнее. В <b>оранжевый</b> - станет теплее. 
 Эти цвета помогают мозгу сильнее воспринимать температуру.</p> 
         <img src="''' + url_for('static', filename='color.jpg') + '''">
-        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''"
+        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''">
         <footer>
             &copy; Давоян Карине, ФБИ-11, 3 курс, 2023
         </footer>
