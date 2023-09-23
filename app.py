@@ -157,8 +157,9 @@ def color():
 '''
 @app.route('/lab2/example')
 def example():
-    return render_template('example.html')
-    
+    name = 'Давоян Карине'
+    return render_template('example.html', name = name)
+
     
 
 
