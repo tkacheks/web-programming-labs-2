@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background: linear-gradient(to right , red,orange,yellow,green, rgb(0, 247, 255), blue, violet );
-    color: rgb(81, 210, 167);
+    background:rgb(226, 132, 179) ;
+    color: rgb(167, 235, 212);
     padding: 20px;
     font-size: 16pt;
     
