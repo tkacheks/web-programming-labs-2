@@ -158,10 +158,10 @@ def color():
 @app.route('/lab2/example')
 def example():
     name = 'Давоян Карине'
-    num = "Лабораторная работа 2"
+    num = "2."
     group = "ФБИ-11"
     kurs = '3 курс'
-    return render_template('example.html', name = name, num = num, group = group, kurs = kurs)
+    return render_template('example.html', name= name, num = num, group = group, kurs = kurs)
 
     
 

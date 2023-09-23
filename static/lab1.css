@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background:rgb(226, 132, 179) ;
-    color: rgb(167, 235, 212);
+    background:rgb(224, 155, 190) ;
+    color: rgb(181, 238, 219);
     padding: 20px;
     font-size: 16pt;
     
@@ -29,8 +29,8 @@ main {
     margin: 10px 20px;
 }
 footer {
-    background: linear-gradient(to right , red,orange,yellow,green, rgb(0, 247, 255), blue, violet );
-    color: rgb(0, 255, 187);
+    background: rgb(224, 155, 190);
+    color: rgb(181, 238, 219);
     padding: 10px;
     font-size: 10pt;
     text-align: right;

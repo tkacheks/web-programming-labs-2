@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Давоян Карине. {{num}}</title>
+    <title>  Лабораторная работа {{num}}
+        {% if name %}
+            {{name}}
+        {% else %}
+            Неизвестно,
+        {% endif %}
+    </title>
     <link rel="stylesheet" href="{{url_for('static', filename = 'lab1.css')}}">
 </head>
 <body>
     <header>
-        WEB-программирование, часть 2. {{num}}
+        WEB-программирование, часть 2.  Лабораторная работа {{num}}
     </header>
     <main>
         5 + 2 = {{5+2}} <br> 
@@ -17,7 +23,25 @@
         45**8 = {{45**8}}
     </main>
     <footer>
-        &copy; {{name}}, {{group}}, {{kurs}},2023
+        &copy; 
+        {% if name %}
+            {{name}}, 
+        {% else %}
+            Аноним,
+        {% endif %}
+
+        {% if group %}
+            {{group}}, 
+        {% else %}
+            Без группы,
+        {% endif %}
+    
+        {% if kurs %}
+            {{kurs}}, 
+        {% else %}
+            Вне курса,
+        {% endif %}
+        2023
     </footer>
     
 </body>
