@@ -3,13 +3,29 @@
 {% block lab %}Лабораторная работа 2{% endblock %}
 
 {% block main %}
+<style>
+.image {
+display:flex;
+flex-wrap:wrap;
 
+}
+
+</style>
         <h1> Букеты</h1>
-        <img src="''' + url_for('static', filename='тюльпан.jpeg') + '''">
-        <img src="''' + url_for('static', filename='роза.jpg') + '''">
-        <img src="''' + url_for('static', filename='букет.jpg') + '''">
-        <img src="''' + url_for('static', filename='букет2.jpg') + '''">
-        <img src="''' + url_for('static', filename='букет3.jpg') + '''">
-        <link rel="stylesheet" href="''' +url_for('static', filename='lab1.css')+'''">
+        <div class="image">
+        <img src="{{ url_for('static', filename='тюльпан.jpeg') }}" style="width: 200px;height: 200px; margin: 10px;" >
+      
+        <img src="{{  url_for('static', filename='роза.jpg') }}" style="width: 200px;height: 200px; margin: 10px;" >
+      
+        <img src="{{  url_for('static', filename='букет.jpg')  }}"style="width: 200px;height: 200px; margin: 10px;"  >
+        
+        <img src="{{ url_for('static', filename='букет2.jpg') }}" style="width: 200px;height: 200px; margin: 10px;" >
+      
+        <img src="{{ url_for('static', filename='букет3.jpg') }}" style="width: 200px;height: 200px; margin: 10px;" >
+        
+    </div>
+    <p> Представлены пять букетов
+    </p>
+        
 {% endblock %}
 
