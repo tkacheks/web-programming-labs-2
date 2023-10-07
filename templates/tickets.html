@@ -11,7 +11,7 @@
     <h2>Ваш билет сформирован по этим данным!</h2>
 
     <div>ФИО пассажира: {{ user2 }}</div>
-    <div>Возраст: {{ '18-30' if agee== 'one' else '30-50' if agee== 'two' else '50-80' if  agee== 'three' else '90-120' }}</div>
+    <div>Возраст: {{ agee }}</div>
     <div>Тип билета: {{ 'детский' if typee6== 'child' else 'взрослый' }}</div>
     <div>Тип полки: {{ 'нижний' if typee2== 'bottom' else 'верхний' if typee2== 'top' else 'нижний боковой' if  typee2== 'bottom_side' else 'верхний боковой' }}</div>
     <div>Наличие багажа: {{ 'с багажом' if typee3== 'yes' else 'без багажа' }}</div>
