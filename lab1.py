@@ -28,6 +28,9 @@ def menu ():
                 <li>
                     <a href="/lab2" target="_blank"   > Лабораторная работа 2 </a>
                 </li>
+                <li>
+                    <a href="/lab3" target="_blank"   > Лабораторная работа 3 </a>
+                </li>
         </ol>
         <footer>
             &copy; Давоян Карине, ФБИ-11, 3 курс, 2023
