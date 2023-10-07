@@ -48,3 +48,38 @@ def pay():
 @lab3.route('/lab3/success')
 def success():
     return render_template('success.html')
+
+@lab3.route('/lab3/tickets')
+def tickets():
+    errors3 = {}
+    user2 = request.args.get('user2')
+    if user2 == '':
+        errors3['user2'] = 'Заполните поле!'
+
+    errors4 = {}
+    agee = request.args.get('agee')
+    if agee == '':
+        print("разрешено")
+        errors4['agee'] = 'Заполните поле!'
+
+    errors5 = {}
+    point = request.args.get('point')
+    if point == '':
+        errors5['point'] = 'Заполните поле!'
+
+    errors6 = {}
+    point2 = request.args.get('point2')
+    if point2 == '':
+        errors6['point2'] = 'Заполните поле!'
+    
+    errors7 = {}
+    date = request.args.get('date')
+    if date == '':
+        errors7['date'] = 'Заполните поле!'
+
+    typee6 = request.args.get('typee6')
+    typee3 = request.args.get('typee3')
+    typee2 = request.args.get('typee2')
+
+    return render_template('tickets.html', user2=user2,agee=agee,errors3=errors3,errors4=errors4,
+    errors5=errors5,errors6=errors6,errors7=errors7,point=point,point2=point2,date=date,typee2=typee2,typee3=typee3,typee6=typee6) 

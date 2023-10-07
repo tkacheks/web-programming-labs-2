@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block lab %}Лабораторная работа 3{% endblock %}
+
+{% block main %}
+
+
+    {% if user2 %}
+
+    <h1>Здравствуйте, {{ user2 }}!</h1>
+    <h2>Ваш билет сформирован по этим данным!</h2>
+
+    <div>ФИО пассажира: {{ user2 }}</div>
+    <div>Возраст: {{ '18-30' if agee== 'one' else '30-50' if agee== 'two' else '50-80' if  agee== 'three' else '90-120' }}</div>
+    <div>Тип билета: {{ 'детский' if typee6== 'child' else 'взрослый' }}</div>
+    <div>Тип полки: {{ 'нижний' if typee2== 'bottom' else 'верхний' if typee2== 'top' else 'нижний боковой' if  typee2== 'bottom_side' else 'верхний боковой' }}</div>
+    <div>Наличие багажа: {{ 'с багажом' if typee3== 'yes' else 'без багажа' }}</div>
+    <div>Пункт выезда: {{ point }}</div>
+    <div>Пункт назначения: {{ point2 }}</div>
+    <div>Дата поездки: {{ date }}</div>
+    
+    <div>
+        <a href="/lab3/tickets">Вернуться на этап заполнения данных</a>
+    </div>
+
+    {% else %}
+
+    <h1> Железнодорожный билет </h1>
+ 
+    <form>
+    <label>ФИО пассажира</label>
+    <div>
+        <input type="text" placeholder="Впишите полное ФИО" name="user2" value="{{ user2 or ''}}">
+        <span class="error3" style="color: red;">{{ errors3.user2 }}</span>
+    </div>
+
+    <label> Ваш возраст: </label>
+    <div>
+        <input type="number" placeholder="Ваш возраст?" name="agee" value="{{ age or ''}}" min="18" max="120">
+    </div>
+
+
+    <label>Тип билета: </label>
+        <div>
+            <select name="typee6">
+                <option value="child" {{ typee6 == 'child' and 'selected' }}>детский</option>
+                <option value="vzr" {{ typee6 == 'vzr' and 'selected' }}>взрослый</option>
+            </select>
+        </div>
+    <label>Тип полки:</label>
+        <div>
+            <select name="typee2">
+                <option value="bottom" {{ typee2 == 'bottom' and 'selected' }}>нижняя</option>
+                <option value="top" {{ typee2 == 'top' and 'selected' }}>верхняя</option>
+                <option value="bottom_side" {{ typee2 == 'bottom_side' and 'selected' }}>нижняя боковая</option>
+                <option value="top_side" {{ typee2 == 'top_side"' and 'selected' }}>верхняя боковая</option>
+            </select>
+        </div>
+    <label>Наличие багажа </label>
+    <div>
+        <select name="typee3">
+            <option value="yes" {{ typee3 == 'yes' and 'selected' }}>с багажом</option>
+            <option value="no" {{ typee3 == 'no' and 'selected' }}>без багажа</option>
+        </select>
+    </div>
+
+    <label>Пункт выезда</label>
+    <div>
+        <input type="text" placeholder="Пункт выезда" name="point" value="{{ point or ''}}">
+        <span class="error5" style="color: red;">{{ errors5.point }}</span>
+    </div>
+
+    <label>Пункт назначения</label>
+    <div>
+        <input type="text" placeholder="Пункт назначения" name="point2" value="{{ point2 or ''}}">
+        <span class="error6" style="color: red;">{{ errors6.point2 }}</span>
+    </div>
+
+    <label>Дата поездки</label>
+    <div>
+        <input type="date" placeholder="Дата поездки. Введите в формате 01.01.2001" name="date" value="{{ date or ''}}" style="width: 300px;">
+        
+        <span class="error7" style="color: red;">{{ errors7.date }}</span>
+    </div> <br>
+        
+        <div> 
+            <button type="submit">Отправить</button> <br>
+            <a href="/lab3/tickets">Сбросить</a> <br><br>
+        </div>
+    </form>
+    {% endif %}
+
+{% endblock %}
+
+
+
+
+
