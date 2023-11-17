@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block lab %}Лабораторная работа 4{% endblock %}
+
+{% block main %}
+
+    <div>Холодильник </div>
+
+    <form method="POST">
+        <div>Установить температуру холодильника</div>
+        <div>
+            <label>
+                <input type="number" name="temperature" id="temperature" placeholder="Введите температуру" value="{{temperature or ''}}">
+            </label>
+            <div style="color: blue;">{{ error }}</div>
+        </div>
+
+        <div>
+            <button type="submit">Установить температуру</button>
+        </div>
+    </form>
+{% endblock %}

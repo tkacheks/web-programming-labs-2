@@ -5,11 +5,12 @@
 {% block main %}
     <h1>Вход</h1>
     <h2>Пожалуйста, авторизуйтесь </h2>
-    <div> {{ error }}</div>
     <form method="post">
         <div>
-            <span class="error" style="color: red;"> {{ error }}</span>
-        </div>
+            {% if error and request.method == 'POST' %}
+            <span class="error" style="color: red;">{{ error }}</span>
+            {% endif %}
+        </div> <br>
         <div>
             
             <label for="username">Пользователь:</label>
