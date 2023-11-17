@@ -1,4 +1,6 @@
 from flask import Blueprint,render_template, request
+import math
+
 lab3 = Blueprint('lab3', __name__)
 
 @lab3.route('/lab3/')
@@ -83,3 +85,9 @@ def tickets():
 
     return render_template('tickets.html', user2=user2,agee=agee,errors3=errors3,errors4=errors4,
     errors5=errors5,errors6=errors6,errors7=errors7,point=point,point2=point2,date=date,typee2=typee2,typee3=typee3,typee6=typee6) 
+
+
+
+
+
+
