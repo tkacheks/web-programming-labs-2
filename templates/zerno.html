@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block lab %}Лабораторная работа 4{% endblock %}
+
+{% block main %}
+
+   <h1>Заказ зерна</h1>
+
+   <form method="POST">
+    <div>
+        <label for="zerno">Выбор зерна</label>
+        <select name="zerno">
+            <option value="barley">Ячмень</option>
+            <option value="oats">Овес</option>
+            <option value="wheat">Пшеница</option>
+            <option value="rye">Рожь</option>
+        </select>
+    </div>
+    <div>
+        <label for="weight">Выбор массы в тоннах:</label>
+        <input type="number" name="weight" value="{{ weight or ''}}">
+    </div>
+    <span> {{ error }}</span>
+    <div>
+        <button type="submit">Покупка</button>
+    </div>
+   </form>
+{% endblock %}
+
+
+
+
+
+   </form>
