@@ -3,7 +3,7 @@ from lab1 import lab1
 from lab2 import lab2
 from lab3 import lab3
 from lab4 import lab4
-from lab4 import lab7
+from lab7 import lab7
 
 
 app = Flask(__name__)
