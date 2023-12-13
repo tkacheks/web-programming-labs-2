@@ -5,6 +5,7 @@ from lab3 import lab3
 from lab4 import lab4
 from lab5 import lab5
 from lab7 import lab7
+from lab8 import lab8
 
 
 app = Flask(__name__)
@@ -14,6 +15,7 @@ app.register_blueprint(lab3)
 app.register_blueprint(lab4)
 app.register_blueprint(lab5)
 app.register_blueprint(lab7)
+app.register_blueprint(lab8)
 
 
 
