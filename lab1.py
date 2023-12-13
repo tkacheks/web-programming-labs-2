@@ -40,6 +40,10 @@ def menu ():
                 <li>
                     <a href="/lab7" target="_blank"   > Лабораторная работа 7 </a>
                 </li>
+                <li>
+                    <a href="/lab8" target="_blank"   > Лабораторная работа 8 </a>
+                </li>
+
         </ol>
         </ol>
         <footer>
@@ -86,6 +90,7 @@ def lab():
                 <li>
                     <a href="/lab1/color" target="_blank"   > Произвольная страница </a>
                 </li>
+                
                 
         </ol>
         <footer>
