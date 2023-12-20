@@ -6,7 +6,7 @@ from lab4 import lab4
 from lab5 import lab5
 from lab7 import lab7
 from lab8 import lab8
-from lab8 import lab9
+from lab9 import lab9
 
 
 app = Flask(__name__)
